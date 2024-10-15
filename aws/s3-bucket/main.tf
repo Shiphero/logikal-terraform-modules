@@ -11,7 +11,7 @@ terraform {
 data "aws_region" "current" {}
 
 resource "aws_s3_bucket" "this" {
-  bucket = "${var.name}-${data.aws_region.current.name}-${var.suffix}"
+  bucket = var.name
 
   tags = var.tags
 }
