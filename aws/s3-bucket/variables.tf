@@ -6,6 +6,7 @@ variable "name" {
 variable "suffix" {
   description = "The name suffix to use (typically the organization_id)"
   type = string
+  default = ""
 }
 
 variable "public" {
